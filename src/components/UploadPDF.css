@@ -1,0 +1,140 @@
+.upload-container {
+  padding: 30px;
+  background: #f8f9fa;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 🔥 center everything */
+}
+
+.upload-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.upload-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  max-width: 600px;
+  width: 100%;              /* 🔥 important */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.upload-area {
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 50px 30px;
+  background: #f9fafb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* ✨ Hover effect */
+.upload-area:hover {
+  border-color: #10b981;
+  background: #ecfdf5;
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.15);
+  transform: translateY(-2px);
+}
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+.upload-icon {
+  width: 64px;
+  height: 64px;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 24px;
+}
+
+.upload-text {
+  color: #6b7280;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.file-info {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.upload-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 20px;
+}
+
+.upload-btn:hover {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.upload-btn:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.message.success {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.message.info {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 20px;
+  }
+
+  .upload-card {
+    padding: 25px;
+  }
+
+  .upload-area {
+    padding: 40px 20px;
+  }
+}

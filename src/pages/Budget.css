@@ -1,0 +1,183 @@
+.budget-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.budget-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #4b5563;
+}
+
+.card p b {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.card select,
+.card input[type="number"],
+.card input[type="date"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.card select:focus,
+.card input[type="number"]:focus,
+.card input[type="date"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.card label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-right: 10px;
+}
+
+.card button {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.card button:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+.card button:active {
+  transform: translateY(0);
+}
+
+.card button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Budget Display */
+.card > p:first-of-type {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 16px 0;
+}
+
+/* Status Colors */
+.card p[style*="green"] {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p[style*="orange"] {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p[style*="red"] {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .budget-container {
+    padding: 15px;
+  }
+
+  .budget-container h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card select,
+  .card input[type="number"],
+  .card input[type="date"] {
+    max-width: 100%;
+  }
+
+  .card button {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Additional styling for inline editing */
+.card > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Custom input styling when editing budget */
+.card input[value]:not([type="date"]):not([type="number"][placeholder]) {
+  max-width: 200px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 8px 12px;
+}
