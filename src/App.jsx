@@ -10,7 +10,7 @@ import TransactionList from "./components/TransactionList";
 import TransactionForm from "./components/TransactionForm";
 import UploadPDF from "./components/UploadPDF";
 import Budget from "./pages/Budget";
-import AIChatbot from "./components/AIChatbot";
+import AIChatbot from "./components/AIChatBot";
 
 import UploadPhonePe from "./components/UploadPhonePe";
 
