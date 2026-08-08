@@ -52,7 +52,7 @@ function AIChatbot() {
       } = await supabase.auth.getUser();
 
       const res = await axios.post(
-        "http://localhost:5000/api/ai/chat",
+        "https://expense-tracking-system-r1bn-c0bb7wfws.vercel.app/api/ai/chat",
         {
           message: currentMessage,
           userId: user.id,
