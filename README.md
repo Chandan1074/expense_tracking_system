@@ -55,7 +55,7 @@ expense-tracker/
    npm run dev
    ```
 
-3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+3. Open [https://expense-tracking-system-drab.vercel.app/) in your browser.
 
 ## Scripts
 
