@@ -8,6 +8,7 @@ import {
   LogOut
 } from "lucide-react";
 import { supabase } from "../utils/supabaseClient";
+import { Bot } from "lucide-react";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -58,6 +59,12 @@ export default function Navbar() {
           icon={<Upload size={20} />}
           label="Upload Statement"
           active={isActive("/upload")}
+        />
+        <NavLink
+          to="/ai-chat"
+          icon={<Bot size={20} />}
+          label="AI Assistant"
+          active={isActive("/ai-chat")}
         />
       </div>
 

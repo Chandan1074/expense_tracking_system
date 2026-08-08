@@ -10,6 +10,7 @@ import TransactionList from "./components/TransactionList";
 import TransactionForm from "./components/TransactionForm";
 import UploadPDF from "./components/UploadPDF";
 import Budget from "./pages/Budget";
+import AIChatbot from "./components/AIChatbot";
 
 import UploadPhonePe from "./components/UploadPhonePe";
 
@@ -59,6 +60,7 @@ function App() {
             {/* <Route path="/upload" element={<UploadPDF />} /> */}
             <Route path="/upload" element={<UploadPhonePe />} />
             <Route path="/budget" element={<Budget />} />
+            <Route path="/ai-chat" element={<AIChatbot />} />
           </Routes>
         </div>
 
